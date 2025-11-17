@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Formulaire</h2>
+
+        <label>Nom complet :</label>
+        <input type="text" id="nom" placeholder="Votre nom...">
+
+        <label>Email :</label>
+        <input type="email" id="email" placeholder="example@gmail.com">
+
+        <label>Genre :</label>
+        <select id="genre">
+            <option value="">-- Choisir --</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select>
+
+        <button onclick="envoyer()">Envoyer</button>
+
+        <p class="success" id="successMsg">Formulaire envoyé avec succès 🎉</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
